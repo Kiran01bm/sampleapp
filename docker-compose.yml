@@ -2,6 +2,17 @@
 version: '2.1'
 
 services:
+  searchWebApp:
+    build: ./searchwebapp
+    image: demoapps/searchwebapp:1.0
+    ports:
+      - "80:80"
+    container_name: webapp
+    links:
+      - searchDB
+    depends_on:
+      - dataseeder
+    restart: always
 
   dataseeder:
     build: ./dataseeder
