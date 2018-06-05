@@ -1,0 +1,6 @@
+DevOps practices should be one of the main supporting pillars to bring awesomeness to the Business
+CI and CD practices are extremely important to bring in Speed, Consistency and Reliability to IT
+IaC Infrastructure as Code is at the core of bringing SCM into Infrastructure space and thus enabling an Immutable Infrastructure design
+Docker is one of the mainstream technologies enabling us to package Applications and their dependencies into a single lighweight unit for deployment and management
+Kubernetes is one of the earliest Container Orchestration technologies which helps us view all of our IT Hardware as one large deployment platform
+Agile practices can be implemented far more efficiently when DevOps, IaC, CI, CD practices are in place, Basically all of these compliment each other

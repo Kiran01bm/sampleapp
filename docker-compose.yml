@@ -3,6 +3,20 @@ version: '2.1'
 
 services:
 
+  dataseeder:
+    build: ./dataseeder
+    image: demoapps/dataseeder:1.0
+    container_name: dataseeder
+    links:
+      - searchDB
+    environment:
+      DB_CONNECTION_STRING: 'jdbc:mysql://searchDB:3306/test'
+      DB_USERNAME: 'user'
+      DB_PASSWORD: 'changeit'
+    depends_on:
+      searchDB:
+        condition: service_healthy
+
   searchDB:
     image: mysql/mysql-server:5.7.22
     ports:
